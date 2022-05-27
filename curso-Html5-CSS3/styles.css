@@ -1,0 +1,37 @@
+body {
+  background: #aabbcc;
+}
+
+
+#title,
+.subtitle,
+.post_title {
+  color: blue;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', sans-serif;
+}
+
+.photo {
+  border-radius: 50%;
+}
+
+.post_title {
+  font-size: 16;
+  font-style: italic;
+}
+
+.post {
+  background: #fff;
+  padding: 10px;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+.lista-contatos1 {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.lista-contatos2 {
+  font-size: larger;
+  list-style-type: georgian;
+}
