@@ -125,7 +125,7 @@ a:hover {
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  box-shadow: 0px 0px 0px 0px #f0ffff;
+  box-shadow: 0px 0px 0px 0px #bcd5f4;
   z-index: -1;
   transition: 400ms ease-in-out 0s;
 }
@@ -139,7 +139,6 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  list-style-type: none;
   z-index: 2;
   opacity: 0;
   visibility: hidden;
@@ -153,6 +152,10 @@ a:hover {
   text-transform: uppercase;
   letter-spacing: 4px;
   font-size: 40px;
+}
+
+.menu-items ul li {
+  list-style-type: none;
 }
 
 .menu-items>ul>li>a:hover {
