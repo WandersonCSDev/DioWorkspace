@@ -14,8 +14,8 @@ body {
 .header-wrapper {
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(to top, #30cfd0 0%, #330867 100%);
   background-size: 350% 350%;
+  background: linear-gradient(to top, #058aaf 0%, #330867 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,7 +55,7 @@ a:hover {
 
 @keyframes backgroundTransition {
   0% {
-    background-position: 0% 60%;
+    background-position: 0% 90%;
   }
 
   50% {
@@ -63,7 +63,7 @@ a:hover {
   }
 
   100% {
-    background-position: 0% 60%;
+    background-position: 0% 90%;
   }
 }
 
@@ -275,4 +275,61 @@ a:hover {
   width: 350px;
   height: 250px;
   color: #4682b4;
+}
+
+/*FOOTER*/
+.footer {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  font-size: smaller;
+  justify-content: center;
+  align-items: center;
+  background: #0e1c57;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer hr {
+  width: 100%;
+}
+
+/*RESPONSIVO*/
+
+@media (max-width: 800px) {
+  .social-media {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    margin-top: 0;
+
+  }
+
+  .card-container {
+    flex-direction: column;
+  }
+
+  .container .card-container:nth-child(1),
+  .container .card-container:nth-child(3) {
+    flex-direction: column-reverse;
+  }
+
+  .card {
+    height: 250px;
+    width: 250px;
+  }
+
+  .card-text {
+    width: 90%;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .card:hover>.card-wrapper::before {
+    height: 192px;
+    width: 192px;
+
+  }
 }
