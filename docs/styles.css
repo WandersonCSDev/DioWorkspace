@@ -127,7 +127,7 @@ a:hover {
   border-radius: 50%;
   box-shadow: 0px 0px 0px 0px #f0ffff;
   z-index: -1;
-  transition: 400ms ease-in-out 0.1s;
+  transition: 400ms ease-in-out 0s;
 }
 
 .menu-items {
