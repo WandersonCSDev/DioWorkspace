@@ -1,16 +1,10 @@
 function Nums(n) {
   let array = [];
-  for (let i = 0; i < n; i++) {
-    array[i] = i + 1;
+  for (let i = 0; i <= n; i++) {
+    array.push([i]);
   }
   return array;
 }
-
-console.log(Nums(100));
-
-console.log(
-  "*****************************************************************"
-);
 
 var array = Nums(100);
 
@@ -33,9 +27,9 @@ function OddNums(array) {
   }
   return oddNums;
 }
-console.log("Pares = ", EvenValues(array));
-console.log(
-  "=========================================================================="
-);
-console.log("Ímpares = ", OddNums(array));
+console.log("Números até 100 = ", Nums(100));
+
+console.log("Números Pares = ", EvenValues(array));
+
+console.log("Números Ímpares = ", OddNums(array));
 //refatorar depois;
