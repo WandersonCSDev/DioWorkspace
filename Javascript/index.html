@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo EventListener</title>
+</head>
+
+<body>
+  <style>
+    #t {
+      border: 1px solid red
+    }
+
+    #t1 {
+      background-color: #0b4bec;
+    }
+
+    #t2 {
+      background-color: #6112e9;
+    }
+  </style>
+
+  <script>
+    // Função para mudar o conteúdo de t3
+    function modifyText() {
+      var t3 = document.getElementById("t3");
+      t3.firstChild.nodeValue = "three";
+
+    }
+
+    // Função para adicionar uma espera de evento em t
+    function load() {
+      var el = document.getElementById("t");
+      el.addEventListener("click", modifyText, false);
+    }
+
+    document.addEventListener("DOMContentLoaded", load, false);
+  </script>
+
+  </head>
+
+  <body>
+
+    <table id="t">
+      <tr>
+        <td id="t1">one</td>
+      </tr>
+      <tr>
+        <td id="t2">two</td>
+      </tr>
+      <tr>
+        <td id="t3"> </td>
+      </tr>
+    </table>
+
+    <input type="reset" value="RESET">
+
+  </body>
+
+</html>
+</body>
+
+</html>
