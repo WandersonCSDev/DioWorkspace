@@ -5,21 +5,28 @@ let btn_menos = document.getElementById("subtrair");
 
 let buttons = document.querySelectorAll("button");
 
-let currentNumber = 0;
+let num = parseFloat(document.currentNumberWrapper.value);
+
+let count = 0;
 
 function increment() {
-  currentNumber = currentNumber + 1;
-  currentNumberWrapper.value = currentNumber;
+  count = count + 1;
+  currentNumberWrapper.value = count;
 }
 
 function decrement() {
-  currentNumber = currentNumber - 1;
-  currentNumberWrapper.value = currentNumber;
+  count = count - 1;
+  currentNumberWrapper.value = count;
 }
+
+currentNumberWrapper.addEventListener("click", function () {
+  currentNumberWrapper.disabled = true;
+});
 
 /*
 Aumentar e encolher os botões conforme
-movimenta o mouse sobre eles.
+movimenta o mouse sobre eles. 
+Animação configurada no arquivo .css
 */
 
 for (let i = 0; i < buttons.length; i++) {
