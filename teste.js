@@ -1,6 +1,4 @@
-const meuObjeto = {
-  chave: valor,
-};
+const NovoErro = new Error();
 
-console.log(meuObjeto.chave);
-console.log(meuObjeto["chave"]);
+NovoErro.name = "Novo Erro";
+NovoErro.message = "Este erro nunca ocorreu";
