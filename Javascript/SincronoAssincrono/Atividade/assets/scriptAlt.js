@@ -4,14 +4,11 @@ const catBtn = document.getElementById("change-cat");
 const catImg = document.getElementById("cat");
 
 const getCats = async () => {
-  try {
-    const data = await fetch(BASE_URL);
-    const json = await data.json();
+  const data = await fetch(BASE_URL)
+    .then((res) => res.json())
+    .catch((e) => console.log(e));
 
-    return json.webpurl;
-  } catch (e) {
-    console.log(e.message);
-  }
+  return data.webpurl;
 };
 
 const loadImg = async () => {
